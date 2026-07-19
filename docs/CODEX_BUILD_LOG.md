@@ -217,3 +217,31 @@ Current Git state after this pass:
 
 Next action:
 Use GitHub Desktop to push the remaining local commits, then verify the repo in the signed-in browser.
+
+
+## 2026-07-19 15:35 - Align README and submission packet after GitHub push
+
+Task:
+Update stale Build Week documentation after Jim confirmed GitHub is active and available.
+
+Files changed:
+- `README.md`
+- `docs/BUILD_WEEK_SUBMISSION_PACKET_2026-07-18.md`
+- `docs/CODEX_BUILD_LOG.md`
+- `99_RECEIPTS/JETTY_CODE_REVIEW_PACKET_2026-07-19_1535.md`
+
+Result:
+The README and submission packet now include the real GitHub repository URL, current branch, latest verified commit, local smoke-test status, honest public-hosting status, honest demo-video status, and remaining submission blockers.
+
+Facts preserved:
+- GitHub repo: `https://github.com/finious/Time-Capture-Club`
+- Branch: `main`
+- Latest verified local/GitHub commit: `f3505c4 Record aircraft report alignment receipt`
+- Local smoke test: `PASS WITH KNOWN LIMITATION`
+- Public demo route: pending
+- Demo video: pending
+
+No claims were made about public hosting, final video, or final submission before those facts exist.
+
+Next action:
+Establish the public demo route and smoke-test it from a clean browser tab.

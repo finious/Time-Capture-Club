@@ -2,6 +2,14 @@
 
 Time-Capture-Club preserves the invisible history of meaningful work.
 
+## Repository
+
+GitHub: https://github.com/finious/Time-Capture-Club
+
+Branch: `main`
+
+Latest verified local/GitHub commit: `f3505c4 Record aircraft report alignment receipt`
+
 ## Problem
 
 Most tools show the finished artifact. They do not preserve the decisions, corrections, tests, release judgment, risks, and return path that made the artifact trustworthy.
@@ -31,9 +39,47 @@ Open `app/index.html` in a browser.
 
 No build step is required. The prototype uses static HTML, CSS, JavaScript, localStorage, and client-side Markdown export.
 
+## Current Smoke-Test Status
+
+Local browser smoke test: **PASS WITH KNOWN LIMITATION**.
+
+Verified locally:
+
+- App loads.
+- A user can complete the full seven-stage loop.
+- Progress reaches `7/7 loop stages touched`.
+- Required fields accept edits and persist.
+- Refresh preserves saved loop state and release decision.
+- Markdown receipt generates completely.
+- Release decision appears in the receipt.
+- Clipboard-blocked fallback selects the full receipt text.
+- Prepared download link appears after receipt generation.
+
+Known limitation:
+
+- Direct clipboard and download behavior may depend on browser permissions. The app provides visible fallback behavior for receipt export.
+
+## Public Hosting Status
+
+Public demo route: **pending**.
+
+The repository is ready for a static public route. The intended deployable app lives in:
+
+`app/`
+
+No build command is required.
+
+## Demo Video Status
+
+Demo video: **pending**.
+
+Do not record final submission video until the public route passes the judge rehearsal.
+
 ## How Codex Was Used
 
 Codex helped implement the static prototype from a governed build checklist. The human operator retained responsibility for scope, product decisions, release gate language, smoke-test states, and final submission judgment.
+
+Codex also helped inspect the prototype, patch refresh/export behavior, maintain the build log, and file timestamped review receipts.
 
 ## What Was Built During Build Week
 
@@ -43,6 +89,7 @@ Codex helped implement the static prototype from a governed build checklist. The
 - Human release gate.
 - Portable Markdown release receipt generation.
 - Codex build log and timestamped receipts.
+- Aircraft inspection report and smoke-test record.
 
 ## Known Limitations
 
@@ -50,9 +97,9 @@ Codex helped implement the static prototype from a governed build checklist. The
 - No database.
 - No payments.
 - No full GitHub API integration.
-- No automatic deployment.
+- No automatic deployment verification.
 - Local draft data is stored in the browser only.
-- GitHub repo, public hosting, browser smoke test, and demo video still need to be completed before submission.
+- Public hosting and demo video still need to be completed before submission.
 
 ## Submission Track
 
