@@ -160,3 +160,38 @@ No GitHub remote is configured yet. The GitHub CLI `gh` is not installed in this
 
 Next action:
 Publish the local repo to GitHub, then update README and the submission packet with verified links only.
+
+
+## 2026-07-19 11:30 - GitHub Desktop remote configured
+
+Task:
+Open the Time-Capture-Club local Git repository in GitHub Desktop and verify remote state after publishing/remote setup.
+
+Result:
+The local repository now has an `origin` remote configured:
+
+`https://github.com/finious/Time-Capture-Club.git`
+
+Local branch state:
+
+`main...origin/main`
+
+Latest commits:
+
+- `0bea3b8 Record Time-Capture-Club local git rail`
+- `74174da Initialize Time-Capture-Club prototype`
+
+Important verification note:
+The GitHub connector returned `404` for `finious/Time-Capture-Club`, and command-line Git could not authenticate to GitHub because terminal credentials are not configured. GitHub Desktop may still have published/configured the private repo successfully because it uses its own signed-in account.
+
+Current truth:
+
+- Local Git repository: VERIFIED.
+- Remote URL configured: VERIFIED.
+- Branch tracking `origin/main`: VERIFIED locally.
+- GitHub connector visibility: NOT VERIFIED / 404.
+- Terminal remote fetch/push verification: BLOCKED by command-line GitHub auth.
+- Human browser/GitHub Desktop verification: REQUIRED.
+
+Next action:
+Jim should confirm the repo appears in GitHub Desktop/browser. If visible and current, update README/submission packet with the verified GitHub URL. If not visible, publish from GitHub Desktop or create the repo on GitHub web and reconnect origin.
