@@ -8,7 +8,7 @@ GitHub: https://github.com/finious/Time-Capture-Club
 
 Branch: `main`
 
-Latest verified local/GitHub commit: `a88019b Align Time-Capture-Club submission docs`
+Latest verified public deployment commit: `9c6b00a Add GitHub Pages demo deployment`
 
 ## Problem
 
@@ -61,9 +61,16 @@ Known limitation:
 
 ## Public Hosting Status
 
-Public demo route: **pending**.
+Public demo route: https://finious.github.io/Time-Capture-Club/
 
-The repository is ready for a static public route. The intended deployable app lives in:
+Public route smoke test: **PASS**.
+
+Verified in a clean browser session and by direct HTTP request:
+
+- Public route returns `HTTP 200`.
+- Public route reaches the working Time-Capture-Club prototype.
+
+The deployable app lives in:
 
 `app/`
 
@@ -99,7 +106,7 @@ Codex also helped inspect the prototype, patch refresh/export behavior, maintain
 - No full GitHub API integration.
 - No automatic deployment verification.
 - Local draft data is stored in the browser only.
-- Public hosting and demo video still need to be completed before submission.
+- Demo video still needs to be completed before submission.
 
 ## Submission Track
 
