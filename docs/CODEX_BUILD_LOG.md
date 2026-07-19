@@ -134,3 +134,29 @@ Current ruling:
 **APPROVED WITH KNOWN RISKS for local demo rehearsal.**
 
 Submission remains blocked until the project is on GitHub, the final URL is known, and the judge rehearsal/demo are complete.
+
+
+## 2026-07-19 11:19 - Local Git rail initialized
+
+Task:
+Put the Time-Capture-Club aircraft under local Git control after the aircraft inspection report identified GitHub/repo proof as the next Build Week blocker.
+
+Files changed:
+- `.gitignore`
+- `docs/CODEX_BUILD_LOG.md`
+- `99_RECEIPTS/JETTY_CODE_REVIEW_PACKET_2026-07-19_1119.md`
+
+Result:
+The Time-Capture-Club folder is now a local Git repository on branch `main`.
+
+First local commit:
+`74174da Initialize Time-Capture-Club prototype`
+
+Why it matters:
+The project now has a local Git receipt and can be published to GitHub from the actual mansion project folder instead of being carried as loose local files.
+
+Current blocker:
+No GitHub remote is configured yet. The GitHub CLI `gh` is not installed in this environment, so remote creation/publishing must happen through GitHub Desktop, GitHub web, or another approved GitHub route.
+
+Next action:
+Publish the local repo to GitHub, then update README and the submission packet with verified links only.
