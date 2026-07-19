@@ -18,7 +18,7 @@ Current ruling:
 
 **APPROVED WITH KNOWN RISKS for local demo rehearsal.**
 
-Not yet approved for final submission because GitHub/public release evidence and final demo recording are still missing.
+Not yet approved for final submission because the latest local Git receipt still needs to be pushed/verified on GitHub, and public release evidence plus final demo recording are still missing.
 
 ## Exists
 
@@ -35,8 +35,8 @@ Not yet approved for final submission because GitHub/public release evidence and
 
 ## Missing
 
-- Git repository initialized for the Time-Capture-Club project folder.
-- GitHub remote / public repo proof.
+- Push latest local receipt commit to GitHub.
+- GitHub browser/connector visibility proof.
 - Public deployed URL.
 - Final recorded demo video.
 - Final Devpost submission.
@@ -78,14 +78,14 @@ Current known behavior after patch:
 | Export or copy works | PASS WITH KNOWN LIMITATION | Clipboard was blocked in the in-app browser, but fallback selected all 2729 receipt characters and exposed a prepared download link. |
 | Release decision appears accurately in receipt | PASS | Receipt included release decision set to `RELEASE APPROVED WITH KNOWN RISKS`. |
 | Demo can repeat without backstage repair | PASS FOR LOCAL REHEARSAL | Reset, sample load, release gate, receipt generation, and copy fallback were repeated successfully. |
-| Public GitHub/deploy path works | NOT VERIFIED | Project folder is not currently a Git repository. |
+| Public GitHub/deploy path works | PARTIAL / NOT VERIFIED | Local Git exists and remote is configured, but latest receipt commit is ahead of `origin/main` and GitHub visibility still needs human/browser confirmation. |
 
 ## Demo Blockers
 
 Before final Build Week submission:
 
-1. Put Time-Capture-Club under Git control.
-2. Publish or push to the intended GitHub repo.
+1. Push the latest local receipt commit to GitHub.
+2. Confirm the intended GitHub repo is visible and contains the current project files.
 3. Add final GitHub URL to README/submission packet.
 4. Deploy or otherwise provide the final public demo path.
 5. Run one judge rehearsal from a clean start.
@@ -93,9 +93,8 @@ Before final Build Week submission:
 
 ## Fixes Required Before Filming
 
-- Initialize/confirm Git repository and remote.
-- Commit current prototype, docs, and receipts.
-- Publish/push to GitHub.
+- Push latest local receipt commit `d4352c6` and this report update to GitHub.
+- Confirm GitHub repo visibility in browser or GitHub Desktop.
 - Confirm final README matches the actual repo and demo path.
 - Run one clean judge rehearsal without explaining around failures.
 
@@ -109,17 +108,17 @@ Before final Build Week submission:
 
 - README still needs final GitHub/public demo URL after repo/deploy is established.
 - `docs/CODEX_BUILD_LOG.md` must include the final GitHub/deploy receipt after publishing.
-- Build Week commit history does not exist yet because the project folder is not yet a Git repository.
+- Build Week commit history now exists locally, but final GitHub visibility and latest push proof are still pending.
 - Known limitations should be copied into README/submission packet after final release route is chosen.
 - Codex usage evidence is present in review packets and build log, but final submission should point to the strongest receipt files.
 
 ## Recommended Next Action
 
-**Create the GitHub rail for Time-Capture-Club, commit the aircraft, then run one judge rehearsal.**
+**Push/verify the GitHub rail for Time-Capture-Club, then run one judge rehearsal.**
 
 One next action only:
 
-**Put the aircraft on GitHub.**
+**Push the latest receipt commit and verify the GitHub repo in browser.**
 
 ## Release Gate
 
