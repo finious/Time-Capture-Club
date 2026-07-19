@@ -245,3 +245,25 @@ No claims were made about public hosting, final video, or final submission befor
 
 Next action:
 Establish the public demo route and smoke-test it from a clean browser tab.
+
+
+## 2026-07-19 16:11 - Correct latest verified commit reference
+
+Task:
+After reviewing the pushed Time-Capture-Club state, correct the README and submission packet so the latest verified local/GitHub commit points to the documentation-alignment commit instead of the earlier aircraft report commit.
+
+Files changed:
+- `README.md`
+- `docs/BUILD_WEEK_SUBMISSION_PACKET_2026-07-18.md`
+- `docs/CODEX_BUILD_LOG.md`
+- `99_RECEIPTS/JETTY_CODE_REVIEW_PACKET_2026-07-19_1611.md`
+
+Result:
+The documentation now names the current verified commit as:
+
+`a88019b Align Time-Capture-Club submission docs`
+
+This avoids sending judges to a README that claims an older commit is the latest verified state.
+
+Next action:
+Push this small correction commit, then move to public demo route.

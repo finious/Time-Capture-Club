@@ -17,7 +17,7 @@ GitHub: https://github.com/finious/Time-Capture-Club
 
 Branch: `main`
 
-Latest verified local/GitHub commit: `f3505c4 Record aircraft report alignment receipt`
+Latest verified local/GitHub commit: `a88019b Align Time-Capture-Club submission docs`
 
 ## One-Sentence Pitch
 
