@@ -195,3 +195,25 @@ Current truth:
 
 Next action:
 Jim should confirm the repo appears in GitHub Desktop/browser. If visible and current, update README/submission packet with the verified GitHub URL. If not visible, publish from GitHub Desktop or create the repo on GitHub web and reconnect origin.
+
+
+## 2026-07-19 11:24 - Aircraft report aligned after local Git setup
+
+Task:
+Correct the aircraft inspection report after local Git initialization and GitHub Desktop remote setup changed the ground truth.
+
+Files changed:
+- `docs/TIME_CAPTURE_CLUB_AIRCRAFT_INSPECTION_REPORT_2026-07-18.md`
+- `docs/CODEX_BUILD_LOG.md`
+- `99_RECEIPTS/JETTY_CODE_REVIEW_PACKET_2026-07-19_1124.md`
+
+Result:
+The aircraft report no longer says the Git repository itself is missing. It now correctly records that local Git exists, the GitHub remote is configured, and GitHub visibility / latest push proof remain the active blockers.
+
+Current Git state after this pass:
+- Branch: `main`
+- Remote: `origin https://github.com/finious/Time-Capture-Club.git`
+- Local commits ahead of `origin/main`: pending push
+
+Next action:
+Use GitHub Desktop to push the remaining local commits, then verify the repo in the signed-in browser.
