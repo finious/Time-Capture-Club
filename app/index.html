@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time-Capture-Club | Build Week Prototype</title>
+  <meta name="description" content="A human-led release loop for preserving the invisible timeline of meaningful work.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Build Week proof loop</p>
+      <h1>Time-Capture-Club</h1>
+      <p class="promise">Time-Capture-Club preserves the invisible history of meaningful work.</p>
+    </div>
+    <div class="status-strip" aria-label="Current loop status">
+      <span id="completion-count">0/7 loop stages touched</span>
+      <strong id="release-state">Release not decided</strong>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <nav class="rail-nav" aria-label="Time capture loop">
+      <button class="nav-step is-active" data-target="home">Start</button>
+      <button class="nav-step" data-target="vision">1. Vision</button>
+      <button class="nav-step" data-target="structure">2. Structure</button>
+      <button class="nav-step" data-target="changes">3. Review</button>
+      <button class="nav-step" data-target="smoke">4. Smoke Test</button>
+      <button class="nav-step" data-target="gate">5. Release Gate</button>
+      <button class="nav-step" data-target="receipt">6. Receipt</button>
+      <button class="nav-step" data-target="return">7. Return</button>
+    </nav>
+
+    <section class="editor-pane" aria-label="Working loop editor">
+      <form id="capture-form">
+        <article class="step-panel is-active home-panel" id="home" data-step="home">
+          <div class="step-head">
+            <p class="eyebrow">Start</p>
+            <h2>Preserve the invisible history of meaningful work.</h2>
+          </div>
+          <p class="lead">Most tools show the finished thing. Time-Capture-Club helps a human preserve what changed, what was tested, what was decided, and where to return.</p>
+          <button type="button" class="primary-start" data-start-loop>Start a Release Loop</button>
+          <p class="small-proof">Static Build Week prototype. One loop. Human release judgment stays in command.</p>
+        </article>
+
+        <article class="step-panel" id="vision" data-step="vision">
+          <div class="step-head">
+            <p class="eyebrow">Gate 1</p>
+            <h2>Vision</h2>
+          </div>
+          <div class="field-grid two">
+            <label>Project name<input name="projectName" value="Time-Capture-Club"></label>
+            <label>Live URL<input name="liveUrl" placeholder="https://example.com"></label>
+            <label>Audience<input name="audience" value="Creators and small teams"></label>
+            <label>Current condition<input name="condition" value="Build Week prototype"></label>
+          </div>
+          <label>Purpose<textarea name="purpose">Preserve the invisible timeline of meaningful work so the creator can return without starting over.</textarea></label>
+          <label>Promise<textarea name="promise">Professional work remembers how it became itself.</textarea></label>
+          <label>Done enough for this release<textarea name="doneEnough" placeholder="What counts as done enough for this release?"></textarea></label>
+        </article>
+
+        <article class="step-panel" id="structure" data-step="structure">
+          <div class="step-head">
+            <p class="eyebrow">Gate 2</p>
+            <h2>Structure</h2>
+          </div>
+          <div class="folder-grid">
+            <label>Live source<input name="liveSource" placeholder="01_LIVE_SITE_SOURCE"></label>
+            <label>Content<input name="contentFolder" placeholder="content / docs / pages"></label>
+            <label>Assets<input name="assetsFolder" placeholder="assets / public"></label>
+            <label>Documentation<input name="docsFolder" value="docs"></label>
+            <label>Tests<input name="testsFolder" placeholder="tests / smoke-tests"></label>
+            <label>Archive<input name="archiveFolder" placeholder="90_ARCHIVE"></label>
+            <label>Deploy-ready cargo<input name="deployCargo" placeholder="07_DEPLOY_READY/netlify-drag-drop"></label>
+          </div>
+          <h3 class="subhead">Project home</h3>
+          <div class="field-grid two">
+            <label>Source location<input name="localSource" placeholder="/path/to/current/source"></label>
+            <label>Repo or project home<input name="repo" placeholder="GitHub repo or project home"></label>
+            <label>Live URL if any<input name="liveUrlSecondary" placeholder="https://example.com"></label>
+            <label>Governing file or checklist<input name="governingFile" placeholder="00_GOVERNANCE/..."></label>
+            <label>Responsible human<input name="responsibleHuman" value="Jimmy"></label>
+            <label>Last known good state<input name="goodCommit" placeholder="unknown pending verification"></label>
+          </div>
+        </article>
+
+        <article class="step-panel" id="changes" data-step="changes">
+          <div class="step-head">
+            <p class="eyebrow">Gate 3</p>
+            <h2>Change Review</h2>
+          </div>
+          <label>Change intent<textarea name="changeIntent" placeholder="What is this release trying to change?"></textarea></label>
+          <div class="field-grid two">
+            <label>Files added<textarea name="filesAdded" placeholder="One per line"></textarea></label>
+            <label>Files changed<textarea name="filesChanged" placeholder="One per line"></textarea></label>
+            <label>Files removed<textarea name="filesRemoved" placeholder="One per line"></textarea></label>
+            <label>Risky paths<textarea name="riskyPaths" placeholder="Routing, config, form, deploy, auth, data"></textarea></label>
+          </div>
+          <label>Configuration or routing changes<textarea name="routingChanges" placeholder="Record anything that changes where work lives or how users arrive."></textarea></label>
+        </article>
+
+        <article class="step-panel" id="smoke" data-step="smoke">
+          <div class="step-head">
+            <p class="eyebrow">Gate 4</p>
+            <h2>Smoke Test</h2>
+          </div>
+          <div class="test-table" id="smoke-tests" aria-label="Smoke test checklist"></div>
+        </article>
+
+        <article class="step-panel" id="gate" data-step="gate">
+          <div class="step-head">
+            <p class="eyebrow">Gate 5</p>
+            <h2>Release Gate</h2>
+          </div>
+          <fieldset class="release-options">
+            <legend>Human release decision</legend>
+            <label><input type="radio" name="releaseDecision" value="RELEASE APPROVED"> Release approved</label>
+            <label><input type="radio" name="releaseDecision" value="RELEASE BLOCKED"> Release blocked</label>
+            <label><input type="radio" name="releaseDecision" value="RELEASE APPROVED WITH KNOWN RISKS"> Release approved with known risks</label>
+          </fieldset>
+          <label>Reviewer<input name="reviewer" value="Jimmy"></label>
+          <label>Decision reason<textarea name="decisionReason" placeholder="Why is this release approved, blocked, or approved with known risks?"></textarea></label>
+          <label>Known risks<textarea name="knownRisks" placeholder="What remains true even if this ships?"></textarea></label>
+        </article>
+
+        <article class="step-panel" id="receipt" data-step="receipt">
+          <div class="step-head">
+            <p class="eyebrow">Gate 6</p>
+            <h2>Release Receipt</h2>
+          </div>
+          <div class="receipt-actions">
+            <button type="button" id="build-receipt">Build Markdown Receipt</button>
+            <button type="button" id="copy-receipt">Copy</button>
+            <button type="button" id="download-receipt">Download .md</button>
+            <a id="download-link" class="download-link is-hidden" href="#" download="TIME_CAPTURE_RELEASE_RECEIPT.md">Download prepared receipt</a>
+          </div>
+          <p id="receipt-status" class="receipt-status" aria-live="polite">Receipt not built yet.</p>
+          <textarea id="receipt-output" class="receipt-output" aria-label="Generated Markdown release receipt"></textarea>
+        </article>
+
+        <article class="step-panel" id="return" data-step="return">
+          <div class="step-head">
+            <p class="eyebrow">Gate 7</p>
+            <h2>Return</h2>
+          </div>
+          <div class="field-grid two">
+            <label>Current status<input name="currentStatus" placeholder="Draft / verified / blocked / shipped"></label>
+            <label>Last verified release<input name="lastVerified" placeholder="date / commit / deploy"></label>
+          </div>
+          <label>Open risks<textarea name="openRisks" placeholder="What still needs attention?"></textarea></label>
+          <label>Next honest action<textarea name="nextAction" placeholder="Name the one next move outside the dashboard."></textarea></label>
+        </article>
+      </form>
+    </section>
+
+    <aside class="proof-pane" aria-label="Proof summary">
+      <section>
+        <p class="eyebrow">Current proof</p>
+        <h2 id="summary-title">Time-Capture-Club</h2>
+        <p id="summary-purpose">Preserve the invisible timeline of meaningful work.</p>
+      </section>
+      <section>
+        <h3>Loop Integrity</h3>
+        <ul id="loop-list" class="loop-list"></ul>
+      </section>
+      <section>
+        <h3>Gate Rules</h3>
+        <p>Automation can organize evidence. The human still decides release.</p>
+        <p class="wall-line">Build the loop. Film the loop. Receipt the loop. Submit the loop.</p>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="app-footer">
+    <button type="button" id="sample-data">Load Build Week Sample</button>
+    <button type="button" id="reset-data">Reset Local Draft</button>
+    <span>Local static prototype. No database. No API. No hidden automation.</span>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
