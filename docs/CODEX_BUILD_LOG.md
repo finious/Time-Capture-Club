@@ -267,3 +267,26 @@ This avoids sending judges to a README that claims an older commit is the latest
 
 Next action:
 Push this small correction commit, then move to public demo route.
+
+
+## 2026-07-19 16:25 - Add GitHub Pages public demo route workflow
+
+Task:
+Prepare the smallest reliable public demo route for Time-Capture-Club without rebuilding or migrating the static app.
+
+Files changed:
+- `.github/workflows/pages.yml`
+- `docs/CODEX_BUILD_LOG.md`
+- `99_RECEIPTS/JETTY_CODE_REVIEW_PACKET_2026-07-19_1625.md`
+
+Result:
+A GitHub Pages workflow now deploys the existing static app from the `app/` folder on pushes to `main` or manual workflow dispatch.
+
+Expected public route after GitHub Pages succeeds:
+`https://finious.github.io/Time-Capture-Club/`
+
+Important status:
+This route is not verified yet. It becomes real only after the workflow is pushed, runs successfully, and the public URL passes smoke testing.
+
+Next action:
+Push the pending commits, verify the GitHub Pages workflow, then smoke-test the public URL.
