@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "method": "source-review-0.2",
+  "checks": [
+    "seeded defects and clean semantics",
+    "denied clipboard exact selectable fallback",
+    "download equals complete report",
+    "same-scope repaired and persistent comparison",
+    "changed-scope no improvement claim",
+    "purpose/audience lexical influence without invented topics",
+    "bounded draft lengths",
+    "hostile inert markup without external requests",
+    "byte/tag rejection preserving previous report",
+    "viewport overflow390/768/1440",
+    "keyboard skip/sample/review/reset",
+    "existing release decision/receipt/refresh regression"
+  ],
+  "notTested": [
+    "screen reader",
+    "full keyboard accessibility audit",
+    "actual SEO effectiveness",
+    "arbitrary input runtime guarantee",
+    "live link reachability",
+    "public deployment",
+    "comprehensive legacy release-loop regression"
+  ]
+}
